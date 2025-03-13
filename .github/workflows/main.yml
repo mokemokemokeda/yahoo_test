@@ -26,4 +26,4 @@ jobs:
 
       - name: Twitter Bio を取得
         
-        run: python example.py
+        run: python main.py
