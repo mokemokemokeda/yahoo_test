@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import json
 from typing import Literal, Optional
+from main import YahooRealtimeSearch
 
 class Timeline:
     def __init__(self, initial_timeline, next_params):
@@ -47,3 +48,7 @@ class YahooRealtimeSearch:
         if next_params:
             next_params['oldestTweetId'] = timeline['entry'][-1]['id']
         return Timeline(timeline, next_params)
+
+        yahoo_realtime_search = YahooRealtimeSearch()
+        timeline = yahoo_realtime_search.search('@ProgressBar202_')
+        print(timeline.timeline['entry'])
