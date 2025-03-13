@@ -20,7 +20,7 @@ jobs:
 
       - name: 必要なパッケージをインストール
         run: pip install requests
-             pip install requirements.txt
+             pip install -r requirements.txt
 
       - name: Twitter Bio を取得
         
