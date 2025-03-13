@@ -24,4 +24,4 @@ jobs:
 
       - name: Twitter Bio を取得
         
-        run: python shutoku.py
+        run: python example.py
